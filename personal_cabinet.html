@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет: FlightPool</title>
+    <link rel="stylesheet" href="personal_cabinet.css">
+</head>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="logo">
+                <img src="foto\logo.png" alt="Логотип FlightPool" class="logo-img">
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="home.html">Главная страница</a> </li>
+                    <li><a href="#акции">Акции</a></li>
+                    <li><a href="#поиск">Поиск</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
+                    <li><a href="login.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <h2>Личный кабинет</h2>
+        <div class="profile-info">
+            <p><strong>Имя:  Анна Николаевна</strong>  </p> <p><strong>Электронная почта: AnnaNar@mail.ru</strong>  </p>
+        </div>
+        <div class="flights">
+            <h3>Совершаемые полеты</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Направление</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody id="flightsTable">
+                    <tr>
+                        <td>2024-12-15</td>
+                        <td>Москва - Волгоград</td>
+                        <td>Выполнен</td>
+                    </tr>
+                    <tr>
+                        <td>2022-1-20</td>
+                        <td>Санкт-Петербург - Сочи</td>
+                        <td>Отмена</td>
+                    </tr>
+                </tbody>
+                <tbody id="flightsTable"></tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2023 FlightPool. Все права защищены. Разработано Цишковской Т. А.   Телефон “8 (800) 100-10-10”</p>
+            </div>
+        </footer>
+
+        </footer>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const from = urlParams.get('from');
+        const to = urlParams.get('to');
+        const departureDate = urlParams.get('departure_date');
+        const arrivalDate = urlParams.get('arrival_date');
+        const passengers = urlParams.get('passengers');
+
+        if (from && to && departureDate && arrivalDate && passengers) {
+            const flightsTable = document.getElementById('flightsTable');
+            const newRow = flightsTable.insertRow();
+            newRow.insertCell().textContent = departureDate;
+            newRow.insertCell().textContent = `${from} - ${to}`;
+            newRow.insertCell().textContent = "Забронирован";
+        }
+    </script>
+</body>
+</html>

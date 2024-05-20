@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FlightPool - сближаем города!</title>
+    <link rel="stylesheet" href="home.css">
+<body>
+    <header>
+        <div class="container"> 
+            <div class="logo">
+                <img src="foto\logo.png" alt="Логотип FlightPool" class="logo-img">
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="home.html">Главная страница</a> </li>
+                    <li><a href="#акции">Акции</a></li>
+                    <li><a href="#поиск">Поиск билетов</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
+                    <li><a href="login.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>FlightPool - сближаем города, вы – живете там, где хотите</h1>
+                <p>Развиваем связность между городами России путем организации авиасообщений на непостоянной основе по мере накопления запросов на перелет.</p>
+            </div>
+        </section>
+
+        <section id="поиск" class="search-form">
+            <div class="container">
+                <h2>Найти билеты</h2>
+                <form action="personal_cabinet.html" method="get"> 
+                    <input type="text" placeholder="Откуда" name="from" required>
+                    <input type="text" placeholder="Куда" name="to" required>
+                    <input type="date" name="departure_date" required>
+                    <input type="date" name="arrival_date" required>
+                    <input type="number" min="1" max="8" placeholder="Пассажиры" name="passengers" required>
+                    <button type="submit">Найти билеты</button>
+                </form>
+            </div>
+            
+        </section>
+
+        <section id="принципы" class="principles">
+            <div class="container">
+                <h2>Как это работает</h2>
+                <div class="principle">
+                    <h3>Выбрать удобную дату перелета можно на нашем сайте.</h3>
+                    <p>Найдите подходящую дату для вашего путешествия. Если вы не увидели, где это можно сделать, то просто нажмите 'Найти билеты'?</p>
+                </div>
+                <div class="principle">
+                    <h3>Скидки</h3>
+                    <li>Специальные тарифы для студентов и пенсионеров</li>
+                    <li>Скидки для семей с детьми</li>
+                    <li>Раннее бронирование: скидка 20% при бронировании за 30 дней до вылета</li>
+                    <li>Сезонные скидки на летние и зимние направления</li>
+                    <li>Если вы часто летаете, тогда можете накопить скидку в 50%. </li>
+                </div>
+                <div class="principle">
+                    <h3>Получить снижение стоимости</h3>
+                    <p>Можно по специальным акциям которые вы можете получать на вашу почту.</p>
+                </div>
+            </div>
+            <div class="container">
+                <form action="/subscribe" method="post"> 
+                    <input type="email" placeholder="Ваш email" name="email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="акции" class="promotions">
+            <div class="container">
+                <h2>Наши акции</h2>
+
+                <div class="promotion">
+                    <h3>Возврат и замена Ваших билетов</h3>
+                    <p>Пандемия изменила планы многих путешественников, но мы знаем, что это не продлится вечно. 
+                    Когда все это закончится, мы продолжим исследовать этот мир так, как привыкли. 
+                    Специальные правила, разработанные для этой сложной ситуации, помогут вам отменить поездку
+                    или отложить ее на более поздний срок.
+                    </p>
+                    <img src="foto\promotion1.jpg" alt="Акция 1">
+                </div>
+
+                <div class="promotion">
+                    <h3>Лучшие предложения</h3>
+                    <p>Снова увидеть улицы, которые были свидетелями столького. Обнять своих любимых и оглянуться назад, чтобы увидеть
+                    , через что вы прошли. И подумать о новых мечтах, которые будут такими особенными!
+                    </p>
+                    <img src="foto/promotion2.jpg" alt="Акция 2">
+                </div>
+
+                <div class="promotion">
+                    <h3>Будем видеться с тобой почаще</h3>
+                    <p>С начала января мы расширяем географию полетов по России, чтобы вы могли
+                    чаще видеться со своими близкими.
+                    </p>
+                    <img src="foto/promotion3.jpg" alt="Акция 3"> 
+                </div>
+
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2>Отзывы пассажиров</h2>
+                <div class="review">
+                    <h4>Мария</h4>
+                    <p>Авиакомпания в целом отвратительная. Отмены и переносы рейсов регулярные. На стойках регистрации люди невежливо. Сегодня лечу в Баку - уже поднасрали!</p>
+                </div>
+
+                <div class="review">
+                    <h4>Алиса</h4>
+                    <p>Первый мой полет на самолёте. Билет покупала сама, на сайте компании. Место не бронировала, еду себе не заказывала и все мне понравилось. На стойке регистрации девушка работала вежливая, ответила мне на мои возникшие вопросы. Посадка в самолёт была через телескопический трап. место было на крыле самолета. Правда есть небольшой минус: практически в иллюминатор ничего не видно. А так все нормально. В следующий раз попробую забронировать себе более комфортное место. Отличная авиакомпания.</p>
+                </div>
+
+                <div class="review">
+                    <h4>Гость</h4>
+                    <p>Летели этой авиакомпанией. Все прошло отлично. Спасибо всему экипажу за комфортный перелет.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="subscribe">
+            <div class="container">
+                <h2>Подпишитесь на закрытые акции</h2>
+                <form action="/subscribe" method="post"> 
+                    <input type="email" placeholder="Ваш email" name="email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 FlightPool. Все права защищены. Разработано Цишковской Т. А.   Телефон “8 (800) 100-10-10”</p>
+            
+        </div>
+    </footer>
+    <script src="jquery-3.5.1.js"></script> 
+</body>
+</html>

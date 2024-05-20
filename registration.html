@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация: FlightPool</title>
+    <link rel="stylesheet" href="registration.css"> </head>
+<body>
+    <header>
+        <div class="container"> 
+            <div class="logo">
+                <img src="foto\logo.png" alt="Логотип FlightPool" class="logo-img">
+            </div>
+            <nav class="navigation-menu">
+                <ul>
+                    <li><a href="home.html">Главная страница</a> </li>
+                    <li><a href="#акции">Акции</a></li>
+                    <li><a href="#поиск">Поиск</a></li>
+                    <li><a href="registration.html">Регистрация</a></li>
+                    <li><a href="login.html">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="registration-form">
+            <div class="container">
+                <h2>Регистрация</h2>
+                <form action="/register" method="post"> 
+                    <input type="text" placeholder="Имя" name="firstName" required>
+                    <input type="text" placeholder="Фамилия" name="lastName" required>
+                    <input type="text" placeholder="Номер документа" name="documentNumber" required>
+                    <input type="tel" placeholder="Телефон" name="phone" required>
+                    <input type="password" placeholder="Пароль" name="password" required pattern="(?=.*\d)(?=.*[!*$]).{7,}">
+                    <input type="password" placeholder="Повтор пароля" name="confirmPassword" required>
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 FlightPool. Все права защищены. Разработано Цишковской Т. А.   Телефон “8 (800) 100-10-10”</p>
+        </div>
+    </footer>
+</body>
+</html>
